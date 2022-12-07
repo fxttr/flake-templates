@@ -2,9 +2,9 @@ name:                ChangeMe
 version:             0.1.0.0
 github:              "author/ChangeMe"
 license:             AllRightsReserved
-author:              "Florian Buestgens"
-maintainer:          "fb@fx-ttr.de"
-copyright:           "Florian Buestgens"
+author:              "author"
+maintainer:          "author@mail.com"
+copyright:           "author"
 
 extra-source-files: []
 
@@ -16,7 +16,7 @@ extra-source-files: []
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
 description: 
-  Please see the README on GitHub at <https://github.com/LambdaInsights/CoreAPI#readme>
+  Please see the README on GitHub at <https://github.com/author/changeMe#readme>
 
 dependencies:
 - base 

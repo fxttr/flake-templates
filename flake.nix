@@ -5,13 +5,13 @@
 
     templates = {
       scala = {
-        path = ./scala;
-        description = "Scala templates";
+        path = ./scala-sbt;
+        description = "Scala sbt template";
       };
 
       haskell = {
-        path = ./haskell;
-        description = "Haskell templates";
+        path = ./haskell-stack;
+        description = "Haskell stack template";
       };
 
       trivial = {

@@ -1,17 +1,22 @@
 {
-  description = "A collection of flake templates";
+  description = "A collection of flake templates for my projects";
 
   outputs = { self }: {
 
     templates = {
       scala = {
-        path = ./scala-sbt;
-        description = "Scala sbt template";
+        path = ./scala;
+        description = "Scala template using the sbt buildsystem";
       };
 
-      haskell = {
+      haskell-stack = {
         path = ./haskell-stack;
-        description = "Haskell stack template";
+        description = "Haskell template using haskellNix and stack";
+      };
+
+      ocaml = {
+        path = ./ocaml;
+        description = "OCaml template using the dune buildsystem"
       };
 
       trivial = {
@@ -21,6 +26,5 @@
     };
 
     defaultTemplate = self.templates.trivial;
-
   };
 }

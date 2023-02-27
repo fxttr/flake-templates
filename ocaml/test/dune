@@ -1,0 +1,8 @@
+(test
+ (name say_hello)
+ (package hello)
+ (libraries hello))
+
+(cram
+ (package hello)
+ (deps %{bin:hello}))

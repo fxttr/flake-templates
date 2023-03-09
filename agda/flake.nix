@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    flake-utils.url = "github:numtide/flake-utils/master";
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
   outputs = { self, nixpkgs, flake-utils }: 
@@ -14,7 +14,7 @@
             inherit pkgs;
             devShells.default = pkgs.mkShell {
                 buildInputs = [
-                  pkgs.agda.withPackages (p: [ p.standard-library ])
+                  (pkgs.agda.withPackages (p: [ p.standard-library ]))
                 ];
               };
           }
